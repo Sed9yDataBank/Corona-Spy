@@ -10,7 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping("/api/spy/report")
+@RequestMapping("/report")
 public class TwilioController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TwilioController.class);
@@ -26,7 +26,7 @@ public class TwilioController {
         return "report";
     }
 
-    @PostMapping("/api/sms")
+    @PostMapping("/sms")
     public String sendSMS(@ModelAttribute("Nuntius") Nuntius nuntius, Model model){
 
         if (nuntius != null){
@@ -37,6 +37,6 @@ public class TwilioController {
         }else{
             LOGGER.info("Invalid SMS Request");
         }
-        return "Redirect: ";
+        return "redirect: ";
     }
 }

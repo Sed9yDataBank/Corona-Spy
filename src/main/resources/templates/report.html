@@ -2,99 +2,112 @@
 
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <title>Coronavirus Tracker App</title>
+    <title>CoronaSpy SMS Report</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-          crossorigin="anonymous">
-
     <!-- custom css -->
-    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="stylesheet" th:href="@{/report.css}">
 
-</head>
 
-<body>
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">Tracking COVID-19</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" th:href="@{/}">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/symptom}">Symptoms<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" th:href="@{/prevention}">Prevention</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/report/}">Make a Report<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <div class="container">
-        <h3>Send us a text Message</h3>
-        <p>If you have fever, cough and difficulty breathing, seek medical care early
-            Stay home if you feel unwell. If you have a fever, cough and difficulty breathing,
-            seek medical attention and call in advance. </p>
-        <p>Calling in advance will allow your health care provider to quickly direct you to the right
-            health facility. This will also protect you and help prevent spread of viruses and other
-            infections.</p>
 
+
+<div class="form-structor">
+    <button class="submit-btn" style="position: sticky !important;margin: 0 auto;top: 10px;left: 100px;">Go Back Home</button>
+	<div class="signup">
+		<h2 class="form-title" id="signup"><span>or</span>Send  An SMS To Report About An Infected Case</h2>
         <form th:action="@{/report/sms}" method="post">
-            <div class="form-group">
-                <label for="toPhoneNumber">Phone Number</label>
-                <input type="text" class="form-control" id="toPhoneNumber" name="phoneNumber">
-                <small id="toPhoneNumberHelp" class="form-text text-muted">If you leave a Nigeria, send a text to our Toll-Free Call Centre: 0800 970000 10</small>
+            <div class="form-holder">
+                <input type=phonenumber class="input" name="phoneNumber" placeholder="Phone Number"/>
+                <input type="text" class="input"  name="state" placeholder="State" />
+                <input type="text" class="input" name="country" placeholder="Country" />
+                <input type="text" class="input" name="address" placeholder="Address" />
+                <input type="text" class="input" name="text" placeholder="Message" />
             </div>
-
-            <div class="form-group">
-                <label for="state">State</label>
-                <input type="text" class="form-control" id="state" name="state" >
-                <small id="ststeHelp" class="form-text text-muted">Enter any of the 36 States e.g Osun.</small>
-            </div>
-
-            <div class="form-group">
-                <label for="country">Country</label>
-                <input type="text" class="form-control" id="country" name="country">
-                <small id="countryHelp" class="form-text text-muted">Enter your country e.g Nigeria.</small>
-            </div>
-
-            <div class="form-group">
-                <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" name="address">
-                <small id="addressHelp" class="form-text text-muted">Please provide the full address of the suspected
-                victim.</small>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea type="text" class="form-control" id="message" name="message"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button class="submit-btn">Send</button>
         </form>
-
     </div>
 
-    <div class="foot">
-        <span class="cod">COVID-19 <em>......</em> </span>
-        <span class="health" >Stay Aware, Stay Healthy!!!
-					<em>...................................................................</em>
-					<a href="index.html">Home</a>
-				</span>
-    </div>
+	<div class="login slide-up">
+		<div class="center">
+			<h2 class="form-title" id="login"><span>or</span>Learn More About Corona Virus</h2>
+			<div class="form-holder">
+				   <p><h2>Overview</h2>
+                Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
 
-</body>
+The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. 
+
+The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).
+
+At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.</p>
+                    <p><h2>Preventation</h2>To prevent infection and to slow transmission of COVID-19, do the following:
+
+    Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.
+    Maintain at least 1 metre distance between you and people coughing or sneezing.
+    Avoid touching your face.
+    Cover your mouth and nose when coughing or sneezing.
+    Stay home if you feel unwell.
+    Refrain from smoking and other activities that weaken the lungs.
+    Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people. </p>
+                       <p><h2>Symptoms</h2>The COVID-19 virus affects different people in different ways.  COVID-19 is a respiratory disease and most infected people will develop mild to moderate symptoms and recover without requiring special treatment.  People who have underlying medical conditions and those over 60 years old have a higher risk of developing severe disease and death.
+
+Common symptoms include:
+
+    fever
+    tiredness
+    dry cough.
+
+Other symptoms include:
+
+    shortness of breath
+    aches and pains
+    sore throat
+    and very few people will report diarrhoea, nausea or a runny nose.
+
+People with mild symptoms who are otherwise healthy should self-isolate and contact their medical provider or a COVID-19 information line for advice on testing and referral.
+
+People with fever, cough or difficulty breathing should call their doctor and seek medical attention.</p>
+			</div>
+			<button class="submit-btn" th:href="@{/}">See Latests Data About Corona Virus</button>
+		</div>
+	</div>
+</div>
+
+
+       <th:block layout:fragment="script">
+    <script>
+
+console.clear();
+
+const loginBtn = document.getElementById('login');
+const signupBtn = document.getElementById('signup');
+
+loginBtn.addEventListener('click', (e) => {
+	let parent = e.target.parentNode.parentNode;
+	Array.from(e.target.parentNode.parentNode.classList).find((element) => {
+		if(element !== "slide-up") {
+			parent.classList.add('slide-up')
+		}else{
+			signupBtn.parentNode.classList.add('slide-up')
+			parent.classList.remove('slide-up')
+		}
+	});
+});
+
+signupBtn.addEventListener('click', (e) => {
+	let parent = e.target.parentNode;
+	Array.from(e.target.parentNode.classList).find((element) => {
+		if(element !== "slide-up") {
+			parent.classList.add('slide-up')
+		}else{
+			loginBtn.parentNode.parentNode.classList.add('slide-up')
+			parent.classList.remove('slide-up')
+		}
+	});
+});
+</script>
+</th:block>
+
