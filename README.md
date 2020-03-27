@@ -1,11 +1,8 @@
 # Corona-Spy
 > Corona Spy Is For Everyone, It Gives You Real Time, Automated, Up To Date Every Data About Numbers Of Corona Virus Statistics.
-
 Corona Spy Is Designed To Reach Highest Scores On User Experience, Coming With It's Light Theme, Eye Relaxing Colors, Easy To Read Data Table And High Resolution Images, There Is No Much Click Handlers, Information You Need Is Out There Waiting For You...Also Corona Spy Is Fully Responsive.
 Already Satisfied ? Here Is More...
-
 Corona Spy Gets You Integrated As An Acting Individual During This Global Crises, With Our App You Can Send Messages (SMS) To Any Phone Number In Your Country Using Our Programmable SMS Form.
-
 If You Notice Any Infected Suspect Just Type In The Coordinations, State, Country, Specific Adress, If You Like And Say Anything About The Infected Suspect, When You Saw Him, What He Was Wearing With Whom He Was.
 These Informative Short Messages You Can Send To Any Phone Number In Your Country Range, Hospitals, Ministry Of Health, Local Crises Combat Organization, Observatory Of New And Emerging Diseases. You Can Even Send It To One Of Your Friends, Family That Live Far From You To Alert Them About The Infection Status In Your Area.
 
@@ -35,7 +32,7 @@ With Corona Spy Send Messages (SMS) To Any Phone Number In Your Country Using Ou
 ![Example screenshot](./img/screenshot.png)
 
 ## Technologies
-* SpringBoot
+* SpringBoot ( For Non-Technical Viewers Of This Project, J2EE Java )
 * Twilio APIs
 * Thymeleaf ( For Non-Technical Viewers Of This Project, HTML, CSS, JavaScript )
 * Postman
