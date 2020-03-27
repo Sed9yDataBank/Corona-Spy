@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+    <title>Corona Spy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" th:href="@{/style.css}">
+
+
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <img src="images/CoronaLogo.png">
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+      <a  target="_blank">Home</a>
+      <a  target="_blank">Send SMS</a>
+      <a  target="_blank">Warnings</a>
+    </div>
+</div>
+
+<div class="container">
+  <div class="carousel-labels">
+      <label class="carousel-label active" for="Forbidden City" th:text=" 'Total Corona Virus Cases Reported Today :' + ${totalReportedCases}"></label>
+    </div>
+  <div class="carousel-container">
+    <div class="carousel">       
+      <div class="carousel-slider">
+        <img name="Corona Map" src="images/CoronaMap.jpg" class="carousel-item" />  
+      </div>
+    </div>
+    <div class="carousel-description">
+      Coronavirus Disease (COVID-19) Is An Infectious Disease Caused By A Newly Discovered Coronavirus. <br>Below You Will Find A Data Table That Gives You Specific Idea About The Infection In The World.    </div>
+  </div>
+</div>
+
+
+
+
+
+   
+
+ <table class="table-fill">
+  <thead>
+  <tr>
+  <th class="text-left">State</th>
+  <th class="text-left">Country</th>
+  <th class="text-left">Total Cases Reported</th>
+  <th class="text-left">New Cases From Yesterday</th>
+  </tr>
+  </thead>
+  <tbody class="table-hover"> 
+    <tr th:each="locationStat : ${locationStats}">
+    <td class="text-left" th:text="${locationStat.state}">Onions</td>
+    <td class="text-left" th:text="${locationStat.country}">2.41</td>
+    <td class="text-left" th:text="${locationStat.latestTotalCases}">0</td>
+    <td class="text-left" th:text="${locationStat.diffFromPrevDayCases}">0</td>
+    </tr>
+  </tbody>
+  </table>
+
+  <footer>
+    <p>This is The Data Table For The 2019 Novel Coronavirus Visual Dashboard Operated By The Johns Hopkins University Center For Systems Science And Engineering (JHU CSSE). Also, Supported By ESRI Living Atlas Team And The Johns Hopkins University Applied Physics Lab (JHU APL).</p>
+  </footer>  
+
+
+</html>
