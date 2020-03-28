@@ -5,15 +5,14 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ConfigurationProperties("twilio")
-public class TwilioConfig {
+public class TwilioConfiguration {
 
     private String accountSid;
-
     private String authToken;
-
     private String trialNumber;
 
-    public TwilioConfig() {
+    public TwilioConfiguration() {
+
     }
 
     public String getAccountSid() {

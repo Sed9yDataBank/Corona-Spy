@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class VirusData {
+public class CoronaData {
 
     //Show Infection Corona Virus Data
     //Old One, A New Repository Has Been Made, Cleaner Tables, New References

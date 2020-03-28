@@ -1,7 +1,7 @@
 package com.corona.spyvirus.controller;
 
 import com.corona.spyvirus.model.CoronaStatus;
-import com.corona.spyvirus.service.VirusData;
+import com.corona.spyvirus.service.CoronaData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,11 +13,11 @@ import java.util.List;
 public class MainController {
 
     @Autowired
-    private VirusData virusData;
+    private CoronaData coronaData;
 
     @GetMapping("/")
     public String showHomePage(Model model) {
-        List<CoronaStatus> allStats = virusData.getAllStats();
+        List<CoronaStatus> allStats = coronaData.getAllStats();
         int totalReportedCases = allStats.stream().mapToInt(stat -> stat.getLatestTotalCases()).sum();
 
         model.addAttribute("locationStats", allStats);

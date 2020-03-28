@@ -6,23 +6,21 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
-
 @Configuration
 public class TwilioInitializer {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(TwilioInitializer.class);
 
-    private final TwilioConfig twilioConfig;
+    private final TwilioConfiguration twilioConfiguration;
 
     @Autowired
-    public TwilioInitializer(TwilioConfig twilioConfig) {
-        this.twilioConfig = twilioConfig;
+    public TwilioInitializer(TwilioConfiguration twilioConfiguration) {
+        this.twilioConfiguration = twilioConfiguration;
         Twilio.init(
-                twilioConfig.getAccountSid(),
-                twilioConfig.getAuthToken()
+                twilioConfiguration.getAccountSid(),
+                twilioConfiguration.getAuthToken()
         );
-
-        LOGGER.info("Twilio Initialized... with account sid {}", twilioConfig.getAccountSid());
+        LOGGER.info("Twilio initialized ... with account sid {} ", twilioConfiguration.getAccountSid());
     }
 }
 
