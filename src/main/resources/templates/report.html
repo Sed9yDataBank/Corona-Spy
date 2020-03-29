@@ -20,7 +20,7 @@
         <form th:action="@{/report/sms}" method="post">
             <div class="form-holder">
                 <input type=phonenumber class="input" name="phoneNumber" placeholder="Phone Number"/>
-                <textarea class="input" name="message" placeholder="Message" style="width: 110% !important;"></textarea>            </div>
+                <textarea class="input" name="message" maxlength = "1600" placeholder="Message" style="width: 110% !important;"></textarea>            </div>
             <button class="submit-btn">Send</button>
         </form>
     </div>
@@ -67,7 +67,8 @@ People with mild symptoms who are otherwise healthy should self-isolate and cont
 
 People with fever, cough or difficulty breathing should call their doctor and seek medical attention.</p>
 			</div>
-			<button class="submit-btn" th:href="@{/}">See Latests Data About Corona Virus</button>
+			<button class="submit-btn" th:href="@{/}"><a th:href="@{/}" style="color: rgba(256, 256, 256, 0.7); text-decoration: none;font-size: 13px;
+font-weight: bold;">See Latest Data About Corona Virus</a></button>
 		</div>
 	</div>
 </div>

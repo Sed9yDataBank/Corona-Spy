@@ -51,7 +51,8 @@
 
 
 
-   
+    <input id='search-box' placeholder='Search'>
+
 
  <table class="table-fill">
   <thead>
@@ -74,7 +75,26 @@
 
   <footer>
     <p>This is The Data Table For The 2019 Novel Coronavirus Visual Dashboard Operated By The Johns Hopkins University Center For Systems Science And Engineering (JHU CSSE). Also, Supported By ESRI Living Atlas Team And The Johns Hopkins University Applied Physics Lab (JHU APL).</p>
-  </footer>  
+  </footer>
 
-
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    (function () {
+    var showResults;
+    $('#search-box').keyup(function () {
+        var searchText;
+        searchText = $('#search-box').val();
+        return showResults(searchText);
+    });
+    showResults = function (searchText) {
+        $('tbody tr').hide();
+        return $('tbody tr:Contains(' + searchText + ')').show();
+    };
+    jQuery.expr[':'].Contains = jQuery.expr.createPseudo(function (arg) {
+        return function (elem) {
+            return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+        };
+    });
+}.call(this));
+</script>
 </html>
