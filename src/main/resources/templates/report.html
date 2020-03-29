@@ -20,11 +20,7 @@
         <form th:action="@{/report/sms}" method="post">
             <div class="form-holder">
                 <input type=phonenumber class="input" name="phoneNumber" placeholder="Phone Number"/>
-                <input type="text" class="input"  name="state" placeholder="State" />
-                <input type="text" class="input" name="country" placeholder="Country" />
-                <input type="text" class="input" name="address" placeholder="Address" />
-                <input type="text" class="input" name="text" placeholder="Message" />
-            </div>
+                <textarea class="input" name="message" placeholder="Message" style="width: 110% !important;"></textarea>            </div>
             <button class="submit-btn">Send</button>
         </form>
     </div>

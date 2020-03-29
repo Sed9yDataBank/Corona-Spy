@@ -28,7 +28,7 @@ public class TwilioController {
     }
 
     @PostMapping("/sms")
-    public String sendSms(@Valid @RequestBody SmsRequest smsRequest) {
+    public String sendSms(@Valid SmsRequest smsRequest) {
         if (smsRequest != null) {
             LOGGER.info("Initializing Twilio SMS ...");
             LOGGER.info("User Phone Number: {}", smsRequest.getPhoneNumber());

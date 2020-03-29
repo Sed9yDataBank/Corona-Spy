@@ -28,12 +28,7 @@ public class TwilioSmsSender implements SmsSender {
         if (isPhoneNumberValid(smsRequest.getPhoneNumber())) {
             PhoneNumber to = new PhoneNumber(smsRequest.getPhoneNumber());
             PhoneNumber from = new PhoneNumber(twilioConfiguration.getTrialNumber());
-
-            String state = smsRequest.getState();
-            String country = smsRequest.getCountry();
-            String physicalAddress = smsRequest.getPhysicalAddress();
-            String message = smsRequest.getMessage()  + "\n state: " + state + "\n country: " + country
-                    + "\n physicalAddress: " + physicalAddress ;
+            String message = smsRequest.getMessage();
 
             MessageCreator creator = Message.creator(to, from, message);
             creator.create();

@@ -10,27 +10,11 @@ public class SmsRequest {
     private final String phoneNumber; // destination
 
     @NotBlank
-    private final String state;
-
-    @NotBlank
-    private final String country;
-
-    @NotBlank
-    private final String physicalAddress;
-
-    @NotBlank
     private final String message;
 
     public SmsRequest(@JsonProperty("phoneNumber") String phoneNumber,
-                      @JsonProperty("state") String state,
-                      @JsonProperty("country") String country,
-                      @JsonProperty("physicalAddress") String physicalAddress,
-                      @JsonProperty("message") String message
-                      ) {
+                      @JsonProperty("message") String message) {
         this.phoneNumber = phoneNumber;
-        this.state = state;
-        this.country = country;
-        this.physicalAddress = physicalAddress;
         this.message = message;
     }
 
@@ -42,25 +26,10 @@ public class SmsRequest {
         return message;
     }
 
-    public String getState() {
-        return state;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public String getPhysicalAddress() {
-        return physicalAddress;
-    }
-
     @Override
     public String toString() {
         return "SmsRequest{" +
-                "phoneNumber='" + phoneNumber + '\'' +
-                ", state='" + state + '\'' +
-                ", country='" + country + '\'' +
-                ", physicalAddress='" + physicalAddress + '\'' +
+                "phoneNumber= ..." + '\'' +
                 ", message='" + message + '\'' +
                 '}';
     }
