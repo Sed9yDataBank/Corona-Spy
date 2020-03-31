@@ -29,9 +29,12 @@ The Data That Corona Spy Uses Is The Data Repository For The 2019 Novel Coronavi
 With Corona Spy Send Messages (SMS) To Any Phone Number In Your Country Using Our Programmable SMS Form Integrated From Twilio API Packages.
 
 ## Screenshots
+
 ![Home Page Data Table Screenshot](https://github.com/Sed9yDataBank/Corona-Spy/blob/master/src/main/resources/static/images/HomePage.gif)
+
 ![Report Page Screenshot](https://github.com/Sed9yDataBank/Corona-Spy/blob/master/src/main/resources/static/images/ReportPage.gif)
-![Report SMS Page Screenshot](https://github.com/Sed9yDataBank/Corona-Spy/blob/master/src/main/resources/static/images/SMS.gif)
+
+![SMS Page Screenshot](https://github.com/Sed9yDataBank/Corona-Spy/blob/master/src/main/resources/static/images/SMS.gif)
 
 ## Technologies
 * SpringBoot ( For Non-Technical Viewers Of This Project, J2EE Java )
