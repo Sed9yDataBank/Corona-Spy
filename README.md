@@ -1,10 +1,12 @@
 # Corona-Spy
-> Corona Spy Is For Everyone, It Gives You Real Time, Automated, Up To Date Every Data About Numbers Of Corona Virus Statistics.
-Corona Spy Is Designed To Reach Highest Scores On User Experience, Coming With It's Light Theme, Eye Relaxing Colors, Easy To Read Data Table And High Resolution Images, There Is No Much Click Handlers, Information You Need Is Out There Waiting For You...Also Corona Spy Is Fully Responsive.
-Already Satisfied ? Here Is More...
-Corona Spy Gets You Integrated As An Acting Individual During This Global Crises, With Our App You Can Send Messages (SMS) To Any Phone Number In Your Country Using Our Programmable SMS Form.
-If You Notice Any Infected Suspect Just Type In The Coordinations, State, Country, Specific Adress, If You Like And Say Anything About The Infected Suspect, When You Saw Him, What He Was Wearing With Whom He Was.
-These Informative Short Messages You Can Send To Any Phone Number In Your Country Range, Hospitals, Ministry Of Health, Local Crises Combat Organization, Observatory Of New And Emerging Diseases. You Can Even Send It To One Of Your Friends, Family That Live Far From You To Alert Them About The Infection Status In Your Area.
+> Corona Spy is for everyone, it gives you real time, automated, up to date every data about numbers of corona virus statistics.
+
+Corona Spy is designed to reach highest scores on user experience, coming with it's light theme, eye relaxing colors, easy to read data table and high resolution images, there is no much click handlers, information you need is out there waiting for you...Also corona spy is fully responsive.
+Already satisfied ? Here is more...
+
+Corona Spy gets you integrated as an acting individual during this global crises, with our app you can send messages (sms) to any phone number in your country using our programmable sms form.
+If you notice any infected suspect just type in the coordinations, state, country, specific adress, if you like and say anything about the infected suspect, when you saw him, what he was wearing with whom he was.
+These informative short messages you can send to any phone number in your country range, hospitals, ministry of health, local crises combat organization, observatory of new and emerging diseases. You can even send it to one of your friends, family that live far from you to alert them about the infection status in your area.
 
 ## Table of contents
 * [General info](#general-info)
@@ -17,16 +19,16 @@ These Informative Short Messages You Can Send To Any Phone Number In Your Countr
 * [Contact](#contact)
 
 ## General info
-During The COVID-19 Pandemic A lot Of People These Days Are Intereseted In Following The Latest News Of This Global Virus To Mesaure Their Risks And Create Their Own Thoughts And Expectations About The Future Of This Infection.
+During the Covid-19 pandemic a lot of people these days are intereseted in following the latest news of this global virus to mesaure their risks and create their own thoughts and expectations about the future of this infection.
 
-Poeple Tend To Run Off Complicated Apps With Confusing Colors, Images, Click Handlers That Leads To A Poblem With Performance And Loading.
-Studies Rates That Users Only Stay For Five Seconds After Click On A Link And During These Quick Seconds They Decide To Stay Or Leave.
+Poeple tend to run off complicated apps with confusing colors, images, click handlers that leads to a poblem with performance and loading.
+Studies rates that users only stay for five seconds after click on a link and during these quick seconds they decide to stay or leave.
 
-Another Motivation Is That Poeple Get Scared Of Trusting The Wrong Informations, Some App Provide Unaccurate Numbers About The Corona Virus And Others May Not Cover All Countries In The World.
+Another motivation is that poeple get scared of trusting the wrong informations, some app provide unaccurate numbers about the corona virus and others may not cover all countries in the world.
 
-The Data That Corona Spy Uses Is The Data Repository For The 2019 Novel Coronavirus Visual Dashboard Operated By The Johns Hopkins University Center For Systems Science and Engineering (JHU CSSE). Also, Supported By ESRI Living Atlas Team And the Johns Hopkins University Applied Physics Lab (JHU APL).
+The data that corona Spy uses is the data repository for the 2019 Novel Coronavirus Visual Dashboard Operated By The Johns Hopkins University Center For Systems Science and Engineering (JHU CSSE). Also, Supported By ESRI Living Atlas Team And the Johns Hopkins University Applied Physics Lab (JHU APL).
 
-With Corona Spy Send Messages (SMS) To Any Phone Number In Your Country Using Our Programmable SMS Form Integrated From Twilio API Packages.
+With corona Spy send messages (sms) to any phone number in your country using our programmable sms form integrated from Twilio API packages.
 
 ## Screenshots
 
@@ -37,13 +39,15 @@ With Corona Spy Send Messages (SMS) To Any Phone Number In Your Country Using Ou
 ![SMS Page Screenshot](https://github.com/Sed9yDataBank/Corona-Spy/blob/master/src/main/resources/static/images/SMS.gif)
 
 ## Technologies
-* SpringBoot ( For Non-Technical Viewers Of This Project, J2EE Java )
+* SpringBoot 
 * Twilio APIs
-* Thymeleaf ( For Non-Technical Viewers Of This Project, HTML, CSS, JavaScript )
+* Thymeleaf 
 * Postman
 
 ## Setup
-Describe how to install / setup your local environement / add link to demo version.
+You can clone this repository and setup the frontend, server.
+
+Why no live demo ? deploying this project is going to cost money for a good hosting service.
 
 ## Code Examples
 ```java
@@ -97,14 +101,13 @@ Describe how to install / setup your local environement / add link to demo versi
 }
 ```
 ## Features
-List of features ready and TODOs for future development
-* Statistic Number About Corona Virus Trusted From World Wide Universities And Organizations
-* Send Phone SMS To Warning About Infected Suspects Around You
-* App Developed To Integrate The Best User Experience
+
+* Corona virus statistics trusted from world wide universities and organizations.
+* Send phone SMS to report about infected suspects around you in real time.
 
 To-Do List:
-* Develop Automated Every Day Phone Notifications To Let Know About Pandemic New Updates
-* Add An Interactive Map With Data About The Virus
+* Develop automated every day phone notifications About pandemic updates.
+* Add an interactive map that gives data visualization about infection levels.
 
 ## Status
 Project is: _in progress_
